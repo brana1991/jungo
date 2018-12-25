@@ -1,0 +1,132 @@
+#masthead {
+	display: none;
+}
+.g-hero {
+	height: 100vh;
+	width: 100%;
+	&__wrapper {
+		position: relative;
+		height: 100%;
+		width: calc(100% - 80px);
+		padding: 0 40px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__shape {
+		width: 50%;
+		height: 300px;
+		border: 14px solid $green;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	h1 {
+		position: absolute;
+		margin: 0;
+		top: calc(50% - 30px);
+		width: calc(100% - 80px);
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+		font-size: 56px;
+		font-weight: bold;
+		font-family: $main-font;
+	}
+	&__side-scroll {
+		position: absolute;
+		transform: rotate(90deg);
+		color: $white;
+		bottom: 90px;
+		span {
+			position: relative;
+			font-family: $main-font;
+			font-weight: bold;
+			letter-spacing: 2px;
+			color: $white;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 50px;
+				height: 2px;
+				top: 44%;
+				right: -67px;
+				background-color: $white;
+			}
+		}
+	}
+	&__side-scroll-text {
+		display: none;
+	}
+}
+
+@include tablet() {
+	.g-hero {
+		&__shape {
+			width: 40%;
+			height: 50%;
+			border: 18px solid $green;
+		}
+		h1 {
+			width: calc(100% - 160px);
+			top: calc(50% - 74px);
+			font-size: 108px;
+		}
+		&__side-scroll {
+			bottom: 140px;
+			left: 30px;
+			span {
+				position: relative;
+				font-family: $main-font;
+				font-size: 18px;
+				font-weight: bold;
+				letter-spacing: 2px;
+				color: $white;
+				&:after {
+					width: 100px;
+					height: 2px;
+					top: 44%;
+					right: -113px;
+					background-color: $white;
+				}
+			}
+		}
+	}
+}
+
+@include desktop() {
+	.g-hero {
+		&__shape {
+			width: 362px;
+			height: 556px;
+		}
+		h1 {
+			font-size: 130px;
+		}
+		&__side-scroll {
+			display: flex;
+			bottom: 170px;
+			position: relative;
+			width: fit-content;
+		}
+		&__side-scroll-text {
+			position: absolute;
+			top: 50%;
+			left: 30px;
+			display: flex;
+			font-family: $main-font;
+			text-transform: uppercase;
+			font-size: 16px;
+			color: $white;
+			transform: rotate(270deg);
+		}
+	}
+}
+
+@include desktop-lg() {
+	.g-hero {
+	}
+}

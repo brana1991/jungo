@@ -13,14 +13,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/,
 and Eric Meyer http://meyerweb.com/eric/tools/css/reset/.
 */
 
-@import 'general/reset',
-	'general/colors',
+@import 'general/colors',
 	'general/screen-reader',
 	'general/font-families',
 	'general/layout-mixins',
 	'general/elements-mixins',
 	'general/media-mixins',
 	'general/text',
-	'general/global-styles',
-	'components/iqos-data',
-	'components/questionnaire';
+	'components/header',
+	'components/menu',
+	'components/general-hero';

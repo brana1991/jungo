@@ -83,6 +83,16 @@ if ( ! function_exists( 'jungo_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'jungo_setup' );
 
+
+/**
+ * Alow SVG
+ *
+ */
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -163,7 +173,7 @@ add_action( 'init', 'register_projects_custom_post_types' );
  */
 function jungo_scripts() {
 	wp_enqueue_style( 'jungo-style', get_stylesheet_uri() );
-
+wp_enqueue_style( 'google_web_fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
