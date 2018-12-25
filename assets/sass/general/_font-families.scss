@@ -1,0 +1,43 @@
+/****************
+* Font families *
+****************/
+
+// Families definitions
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('./fonts/MyriadPro-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'DanteMTStd-Regular';
+	src: url('assets/fonts/DanteMTStd-Regular.woff') format('woff');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Exo2 Medium';
+	src: url('assets/fonts/Exo2-Medium.ttf') format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Exo2 Light';
+	src: url('assets/fonts/Exo2-Light.ttf') format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Exo2 Regular';
+	src: url('assets/fonts/Exo2-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Segoeui';
+	src: url('assets/fonts/segoeui.ttf') format('truetype');
+	font-weight: normal;
+}
+
+// Families variables
+$main-font: 'MyriadPro';
+$Exo2-light: 'Exo2 Light';
+$Exo2-medium: 'Exo2 Medium';
+$Exo2-bold: 'Exo2-Bold';
+$Segoeui: 'Segoeui';
+$dante: 'DanteMTStd-Regular';

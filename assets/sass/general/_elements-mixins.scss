@@ -1,0 +1,65 @@
+/******************
+* Elements mixins *
+******************/
+
+// Base element mixin
+@mixin elem(
+  $family: $main-family,
+  $size: 16px,
+  $weight: 400,
+  $color: $white,
+  $display: inline,
+  $padding: 20px 40px,
+  $bg-color: $white,
+  $border: false,
+  $radius: false
+) {
+	@include font-style( $family, $size, $weight, $color );
+	display: $display;
+	padding: $padding;
+	color: $color;
+	background-color: $bg-color;
+	@if $border {
+		border: $border;
+	}
+	@if $radius {
+		border-radius: $radius;
+	}
+}
+
+// CTA
+
+// animation for rounded play button gover state
+@keyframes expand {
+	0% {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		width: 150%;
+		height: 150%;
+		background-color: transparent;
+		border: 4px solid $gold;
+	}
+}
+
+// Text links
+@mixin link {
+	@include font-style( $secondary-family, 16px, 400 );
+	text-decoration: none;
+	transition: 0.2s ease-out;
+
+	&:hover {
+		color: $text-black;
+	}
+}
+
+// Form elements
+@mixin input-text {
+	@include elem();
+}

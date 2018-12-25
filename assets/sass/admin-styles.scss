@@ -1,0 +1,30 @@
+//Mask radio buttons into white pattern section
+.layout {
+  .acf-radio-list {
+    display: flex;
+    input {
+      opacity: 0;
+    }
+    li {
+      margin: 10px 0 !important;
+    }
+    .selected {
+      img {
+        border: 3px solid #008ec2;
+      }
+    }
+
+    .pattern-choice {
+      width: 60px;
+      height: 60px;
+    }
+    .pattern-choice-white {
+      background-color: #0e2045;
+
+    }
+  }
+}
+
+.acf-field-5aa2a107aee37 {
+  // background-color: #000;
+}

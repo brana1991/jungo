@@ -1,0 +1,38 @@
+.data-page {
+	&__cigarete-smokers {
+		display: none;
+		flex-flow: column;
+		transition: 0.5s;
+	}
+	&__iqos-smokers {
+		display: flex;
+		flex-flow: column;
+		transition: 0.5s;
+	}
+	&__iqos-table {
+		display: flex;
+	}
+	&__cigarete-table {
+		display: flex;
+	}
+	&__table-place {
+		padding: 10px;
+		border: 1px solid black;
+		min-width: 200px;
+		width: 100%;
+	}
+	.chose-table-btn {
+		width: fit-content;
+		display: inline-flex;
+		padding-bottom: 6px;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		cursor: pointer;
+		transition: 0.5s;
+		&.active {
+			color: blue;
+		}
+	}
+}

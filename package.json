@@ -1,0 +1,52 @@
+{
+  "name": "Austurhofn",
+  "version": "1.0.0",
+  "description": "Custom WP theme for Austurhofn project",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "J&L",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/assets/js/src/test-files/test-env.js"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-runtime": "^6.26.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.22.0",
+    "browserify": "^14.4.0",
+    "del": "^3.0.0",
+    "dotenv": "^4.0.0",
+    "event-stream": "^3.3.4",
+    "glob": "^7.1.1",
+    "gsap": "^1.20.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cond": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.7",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "stream-browserify": "^2.0.1",
+    "stream-combiner2": "^1.1.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-transform": "^1.0.0",
+    "watchify": "^3.9.0",
+    "yargs": "^8.0.2"
+  }
+}

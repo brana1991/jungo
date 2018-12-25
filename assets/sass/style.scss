@@ -1,0 +1,26 @@
+/*!
+Theme Name: Jungo theme
+Theme URI:
+Author: Milan Poznan
+Author URI: https://www.linkedin.com/in/milan-poznan-0a0369109/
+Description: Custom WP theme for Jungo agency
+Version: 1.0.0
+Text Domain:
+Tags:
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/,
+and Eric Meyer http://meyerweb.com/eric/tools/css/reset/.
+*/
+
+@import 'general/reset',
+	'general/colors',
+	'general/screen-reader',
+	'general/font-families',
+	'general/layout-mixins',
+	'general/elements-mixins',
+	'general/media-mixins',
+	'general/text',
+	'general/global-styles',
+	'components/iqos-data',
+	'components/questionnaire';
