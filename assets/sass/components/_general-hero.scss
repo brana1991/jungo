@@ -9,9 +9,7 @@
 		height: 100%;
 		width: calc(100% - 80px);
 		padding: 0 40px;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		@include bgImage();
 		display: flex;
 		align-items: center;
 		justify-content: center;
