@@ -12,6 +12,20 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
+@mixin cta() {
+	width: 200px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid $black;
+	color: $black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: $main-font;
+	font-weight: bold;
+	font-family: 14px;
+}
 
 // Form elements
 @mixin input-text {
