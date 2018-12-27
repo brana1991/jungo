@@ -4,8 +4,6 @@
 
 // Default typography styles for the site
 body {
-	background: $grey;
-	font-family: $Segoeui;
 }
 // Plugin styles
 // .disqus-footer__wrapper {
@@ -22,29 +20,7 @@ h5 {
 h1 {
 	font-size: 38px;
 }
-button {
-	width: 340px;
-	max-width: 90%;
-	margin: 0 auto;
-	height: 80px;
-	border: 2px solid $grey-text;
-	font-size: 22px;
-	transition: 0.5s;
-}
-select {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	width: 240px;
-	height: 60px;
-	border: 2px solid $grey-text;
-	font-size: 22px;
-	background: $grey;
-	border-radius: 0;
-	text-align: center;
-	text-align-last: center;
-}
+
 input {
 	outline: none;
 }
@@ -54,132 +30,42 @@ a {
 em {
 	font-style: italic;
 }
-#next {
-	display: none;
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	width: 50px;
-	height: 50px;
-	border: 1px solid $grey-text;
-	border-radius: 50%;
-	justify-content: center;
-	align-items: center;
-	z-index: 100;
-	&:before {
-		content: '';
-		width: 10px;
-		height: 10px;
-		border-top: 2px solid $grey-text;
-		border-right: 2px solid $grey-text;
-		transform: rotate(45deg);
-	}
+.global-wrapp {
+	padding: 0 38px;
 }
-.input-wrapp {
-	display: flex;
-	margin-bottom: 10px;
-	font-size: 16px;
-	input {
-		margin-right: 10px;
-	}
-}
-.pass-protection-page {
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	p {
-		margin-bottom: 20px;
-	}
-	.submit-pass {
-		border: 1px solid black;
-	}
-}
-.option-wrapp {
-	display: flex;
-	flex-flow: column;
-	position: relative;
-	span {
-		font-size: 16px;
-		margin-bottom: 10px;
-	}
-	&:before {
-		content: '';
-		position: absolute;
-		top: 48%;
-		right: 20px;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 10px 10px 0px 10px;
-		border-color: $grey-text transparent transparent transparent;
-		// background: $grey-text;
-		// border-top: 2px solid red;
-		// border-right: 2px solid red;
-		z-index: 10;
-		transition: 0.5s;
-		// transform: rotate(45deg);
-	}
-	.general-select {
-	}
-}
-select {
-}
-.option-wrapp-active {
-	&:before {
-		content: '';
-		position: absolute;
-		top: 48%;
-		right: 20px;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 0px 10px 10px 10px;
-		border-color: transparent transparent $grey-text transparent;
-		// background: $grey-text;
-		// border-top: 2px solid red;
-		// border-right: 2px solid red;
-		z-index: 10;
-		transition: 0.5s;
-		// transform: rotate(45deg);
-	}
+
+.section-title {
+	margin-bottom: 50px;
+	color: $black;
+	font-family: $main-font;
+	font-weight: bold;
+	font-size: 48px;
 }
 @include tablet() {
-	#next {
-		bottom: 80px;
-		right: 80px;
+	.global-wrapp {
+		padding: 0 80px;
 	}
-	.input-wrapp {
-		margin-bottom: 30px;
-		font-size: 20px;
-		input {
-			margin-right: 20px;
+	.section-title {
+		position: relative;
+		padding-left: 200px;
+		&:before {
+			content: 'About us';
+			left: 0;
+			top: 20px;
+			padding-top: 5px;
+			width: 180px;
+			border-top: 2px solid $grey;
+			font-size: 16px;
+			position: absolute;
 		}
 	}
-	.option-wrapp {
-		margin-bottom: 30px;
-		font-size: 20px;
-		input {
-			margin-right: 20px;
-		}
-	}
 }
-.disabled {
-	pointer-events: none;
-}
-.active-btn {
-	background-color: $grey-text;
-	color: $grey;
-}
+
 h1 {
 	text-transform: uppercase;
 	font-size: 30px;
-	line-height: 1.4;
-	font-family: $Segoeui;
-	letter-spacing: 3px;
+	line-height: 1.2;
+	font-family: $main-font;
 }
 .content {
 	font-size: 16px;
@@ -218,17 +104,6 @@ img[class$='-imgtobg'] {
 		color: $white;
 	}
 }
-.thankyou-page {
-	display: flex;
-	height: 100vh;
-	justify-content: center;
-	align-items: center;
-	font-family: $Segoeui;
-	h1 {
-		font-size: 24px;
-		margin-bottom: 10px;
-	}
-}
 
 a.disabled {
 	// pointer-events: none;
@@ -245,34 +120,6 @@ a.disabled {
 }
 
 @include desktop() {
-	.option-wrapp {
-		margin-bottom: 30px;
-		font-size: 20px;
-		input {
-			margin-right: 20px;
-		}
-		&:before {
-			display: none;
-		}
-	}
-	.thankyou-page {
-		font-family: $Segoeui;
-		h1 {
-			font-size: 44px;
-			margin-bottom: 10px;
-		}
-	}
-	h2 {
-		font-size: 48px;
-	}
-	p {
-		// letter-spacing: 0.8px;
-	}
-	.js-alert-text {
-		font-size: 20px;
-		line-height: 24px;
-		letter-spacing: 0.5px;
-	}
 }
 @include desktop-xlg() {
 	h2 {

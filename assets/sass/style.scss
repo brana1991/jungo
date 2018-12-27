@@ -14,12 +14,14 @@ and Eric Meyer http://meyerweb.com/eric/tools/css/reset/.
 */
 
 @import 'general/colors',
-	'general/screen-reader',
 	'general/font-families',
 	'general/layout-mixins',
 	'general/elements-mixins',
 	'general/media-mixins',
 	'general/text',
+	'general/global-styles',
 	'components/header',
 	'components/menu',
+	'components/footer',
+	'components/info-image-section',
 	'components/general-hero';

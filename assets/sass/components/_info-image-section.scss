@@ -1,0 +1,30 @@
+.info-img {
+	padding-top: 100px;
+	color: $grey;
+	&__wrapper {
+		display: flex;
+		flex-flow: column-reverse;
+	}
+	&__image {
+		height: 465px;
+		@include bgImage();
+	}
+	&__info {
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 32px;
+		font-family: $roboto;
+	}
+}
+
+@include tablet() {
+	.info-img {
+		padding-top: 150px;
+
+		&__text {
+			padding-left: 200px;
+		}
+	}
+}

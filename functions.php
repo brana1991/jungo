@@ -173,7 +173,8 @@ add_action( 'init', 'register_projects_custom_post_types' );
  */
 function jungo_scripts() {
 	wp_enqueue_style( 'jungo-style', get_stylesheet_uri() );
-wp_enqueue_style( 'google_web_fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700' );
+	wp_enqueue_style( 'google_web_fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700' );
+	wp_enqueue_style( 'google_mono_font', 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
