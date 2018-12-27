@@ -13,13 +13,14 @@
  */
 
 get_header();
+?>
+<div id="primary" class="content-area">
+  <main id="main" class="site-main">
+<?php
 if( have_rows('content_component') ):
      // loop through the rows of data
     while ( have_rows('content_component') ) : the_row();
     ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 			<!-- General hero section -->
 			<?php  if( get_row_layout() == 'general_hero' ): ?>
 			<div class="hero">
@@ -40,11 +41,12 @@ if( have_rows('content_component') ):
 			  <?php include get_template_directory() . '/template-parts/our-team.php'; ?>
 			</div>
 		<?php endif; ?>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
 <?php
 endwhile;
 endif;
+?>
+</main><!-- #main -->
+</div><!-- #primary -->
+<?php
 get_sidebar();
 get_footer();
