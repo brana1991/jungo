@@ -176,6 +176,12 @@ function jungo_scripts() {
 	wp_enqueue_style( 'google_web_fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700' );
 	wp_enqueue_style( 'google_mono_font', 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700' );
 
+	wp_deregister_script( 'jquery' );
+	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', array(), '2.2.4', false );
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0.0', true );
+
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
