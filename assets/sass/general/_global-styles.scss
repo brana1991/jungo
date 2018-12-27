@@ -41,25 +41,6 @@ em {
 	font-weight: bold;
 	font-size: 48px;
 }
-@include tablet() {
-	.global-wrapp {
-		padding: 0 80px;
-	}
-	.section-title {
-		position: relative;
-		padding-left: 200px;
-		&:before {
-			content: 'About us';
-			left: 0;
-			top: 20px;
-			padding-top: 5px;
-			width: 180px;
-			border-top: 2px solid $grey;
-			font-size: 16px;
-			position: absolute;
-		}
-	}
-}
 
 h1 {
 	text-transform: uppercase;
@@ -113,18 +94,30 @@ a.disabled {
 ****************/
 
 @include tablet() {
-	h2 {
-		font-size: 44px;
-		line-height: 0.92;
+	.global-wrapp {
+		padding: 0 80px;
+	}
+	.section-title {
+		position: relative;
+		padding-left: 200px;
+		&:before {
+			content: 'About us';
+			left: 0;
+			top: 20px;
+			padding-top: 5px;
+			width: 180px;
+			border-top: 2px solid $grey;
+			font-size: 16px;
+			position: absolute;
+		}
 	}
 }
 
 @include desktop() {
 }
-@include desktop-xlg() {
-	h2 {
-		font-size: 58px;
-		line-height: 56px;
+@include desktop-lg() {
+	.global-wrapp {
+		padding: 0 140px;
 	}
 	p {
 		font-size: 19px;
