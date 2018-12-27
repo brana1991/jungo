@@ -4,7 +4,7 @@
 
     </div>
     <div class="info-img__info global-wrapp">
-      <div class="info-img__title">
+      <div class="info-img__title section-title">
         <?php the_field('info_title'); ?>
       </div>
       <div class="info-img__text">
