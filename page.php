@@ -21,12 +21,18 @@ if( have_rows('content_component') ):
      // loop through the rows of data
     while ( have_rows('content_component') ) : the_row();
     ?>
+    <!-- Info with client section -->
+    <?php  if( get_row_layout() == 'clients_section' ): ?>
+      <div class="clients-section">
+        <?php include get_template_directory() . '/template-parts/clients-component.php'; ?>
+      </div>
+    <?php endif; ?>
 			<!-- General hero section -->
-			<?php  if( get_row_layout() == 'general_hero' ): ?>
+		<?php  if( get_row_layout() == 'general_hero' ): ?>
 			<div class="hero">
 			  <?php include get_template_directory() . '/template-parts/general-hero.php'; ?>
 			</div>
-		<?php endif; ?>
+	  <?php endif; ?>
 
 		<!-- Info with image section -->
 		<?php  if( get_row_layout() == 'info_with_image' ): ?>
@@ -41,12 +47,17 @@ if( have_rows('content_component') ):
 			  <?php include get_template_directory() . '/template-parts/our-team.php'; ?>
 			</div>
 		<?php endif; ?>
-<?php
-endwhile;
-endif;
-?>
+
+
+
+
+    <?php
+    endwhile;
+    endif;
+    ?>
 </main><!-- #main -->
 </div><!-- #primary -->
+
 <?php
 get_sidebar();
 get_footer();
