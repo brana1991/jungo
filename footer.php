@@ -28,13 +28,13 @@
 	<div class="footer__connect">
 		<div class="footer__connect__wrapper">
 		 <p>CONNECT</p>
-		 <img src="wp-content/themes/jungo/assets/img/XMLID_444_.svg" alt="facebook logo"/>
-		 <img src="wp-content/themes/jungo/assets/img/XMLID_445_.svg" alt="instagram logo"/>
-		 <img src="wp-content/themes/jungo/assets/img/XMLID_451_.svg" alt="twitter logo"/>
+		 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-facebook.svg" alt="facebook logo" />
+		 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-instagram.svg" alt="instagram logo" />
+		 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-twitter.svg" alt="twitter logo" />
  		</div>
 	</div>
-	 <div class="footer-copyrights">
-		 <div class="footer-copyrights__wrapper">
+	 <div class="footer__copyrights">
+		 <div class="footer__copyrights__wrapper">
 				 <p>Cookie Policy</p>
 				 <p>© 2018 Jungo, all rights reserved.</p>
 			</div>
