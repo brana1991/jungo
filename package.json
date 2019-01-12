@@ -48,5 +48,8 @@
     "vinyl-transform": "^1.0.0",
     "watchify": "^3.9.0",
     "yargs": "^8.0.2"
+  },
+  "dependencies": {
+    "tilt.js": "^1.2.1"
   }
 }
