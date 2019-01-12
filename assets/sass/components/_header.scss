@@ -1,1 +1,62 @@
+.site-header {
+	position: absolute;
+	width: 100%;
+	padding: 50px 36px 0;
+	display: flex;
+	justify-content: space-between;
+	z-index: 20;
+	&__logo {
+		width: 140px;
+		height: 32px;
+		img {
+			width: 100%;
+		}
+	}
+	&__hamburger-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: auto;
+		height: 30px;
+		color: $white;
+		font-family: $main-font;
+		p {
+			margin-right: 20px;
+		}
+	}
+	&__hamburger-btn {
+		width: 30px;
+		height: 2px;
+		background: $green;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -4px;
+			width: 30px;
+			height: 2px;
+			background: $green;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 4px;
+			width: 30px;
+			height: 2px;
+			background: $green;
+		}
+	}
+}
 
+@include tablet() {
+	.site-header {
+		padding: 70px 80px 0;
+		&__logo {
+			width: 200px;
+			height: 46px;
+		}
+		&__hamburger-wrapper {
+			height: 50px;
+		}
+	}
+}

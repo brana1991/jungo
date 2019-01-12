@@ -1,38 +1,99 @@
-.data-page {
-	&__cigarete-smokers {
-		display: none;
-		flex-flow: column;
-		transition: 0.5s;
+.main-navigation {
+	position: absolute;
+	width: 95vw;
+	height: 100vh;
+	padding-top: 50px;
+	padding-right: 36px;
+	padding: 50px 36px 0px 60px;
+	right: -100vw;
+	background-color: $background-grey;
+	transition: 0.5s;
+	z-index: 50;
+	&__wrapper {
+		position: relative;
 	}
-	&__iqos-smokers {
+	&__hamburger-wrapper {
+		position: relative;
 		display: flex;
-		flex-flow: column;
+		align-items: center;
+		justify-content: flex-end;
+		width: auto;
+		height: 30px;
+		right: 0;
+		padding-right: 30px;
+		color: $black;
+		font-family: $main-font;
 		transition: 0.5s;
-	}
-	&__iqos-table {
-		display: flex;
-	}
-	&__cigarete-table {
-		display: flex;
-	}
-	&__table-place {
-		padding: 10px;
-		border: 1px solid black;
-		min-width: 200px;
-		width: 100%;
-	}
-	.chose-table-btn {
-		width: fit-content;
-		display: inline-flex;
-		padding-bottom: 6px;
-		margin-right: 20px;
-		margin-left: 20px;
-		margin-top: 40px;
-		margin-bottom: 40px;
-		cursor: pointer;
-		transition: 0.5s;
-		&.active {
-			color: blue;
+		opacity: 0;
+		p {
+			font-weight: bold;
 		}
+	}
+	&__hamburger-btn {
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+		width: 16px;
+		height: 16px;
+		background: transparent;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -4px;
+			width: 16px;
+			height: 3px;
+			top: 0;
+			background: $green;
+			transform: rotate(-45deg);
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 4px;
+			width: 16px;
+			height: 3px;
+			top: 0;
+			background: $green;
+			transform: rotate(45deg);
+		}
+	}
+}
+.menu {
+	padding-top: 75px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	li {
+		font-size: 24px;
+		font-family: $main-font;
+		font-weight: bold;
+		color: $black;
+		margin-bottom: 18px;
+		text-transform: uppercase;
+		transition: 0.3s;
+		.sub-menu {
+			margin: 18px 0 28px;
+			li {
+				font-size: 18px;
+				font-weight: normal;
+				color: #999999;
+				margin-bottom: 10px;
+				text-transform: none;
+			}
+		}
+	}
+}
+
+@include tablet() {
+	.main-navigation {
+		width: 65vw;
+		padding: 70px 80px;
+	}
+}
+
+@include tablet() {
+	.main-navigation {
+		width: 540px;
+		padding: 70px 80px;
 	}
 }
