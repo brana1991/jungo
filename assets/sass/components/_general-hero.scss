@@ -15,22 +15,21 @@
 		justify-content: center;
 	}
 	&__shape {
-		width: 50%;
-		height: 300px;
-		border: 14px solid $green;
+		width: 100%;
+		height: 50%;
+		position: relative;
+		@include bgImage();
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 	h1 {
-		position: absolute;
-		margin: 0;
-		top: calc(50% - 30px);
-		width: calc(100% - 80px);
+		width: 100%;
+		margin-bottom: 30px;
 		text-align: center;
 		text-transform: uppercase;
 		color: $white;
-		font-size: 56px;
+		font-size: 60px;
 		font-weight: bold;
 		font-family: $main-font;
 	}
@@ -64,14 +63,16 @@
 @include tablet() {
 	.g-hero {
 		&__shape {
-			width: 40%;
-			height: 50%;
-			border: 18px solid $green;
+			height: 64%;
+			background-size: contain;
 		}
 		h1 {
 			width: calc(100% - 160px);
-			top: calc(50% - 74px);
-			font-size: 108px;
+			font-size: 106px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
 		}
 		&__side-scroll {
 			bottom: 140px;
@@ -98,11 +99,14 @@
 @include desktop() {
 	.g-hero {
 		&__shape {
-			width: 362px;
-			height: 556px;
+			// width: 362px;
+			// height: 556px;
+			transform-style: preserve-3d;
+			position: relative;
 		}
 		h1 {
 			font-size: 130px;
+			transform: translateZ(20px);
 		}
 		&__side-scroll {
 			display: flex;
