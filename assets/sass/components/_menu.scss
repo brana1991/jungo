@@ -11,6 +11,7 @@
 	z-index: 50;
 	&__wrapper {
 		position: relative;
+		height: 100%;
 	}
 	&__hamburger-wrapper {
 		position: relative;
@@ -57,6 +58,21 @@
 			transform: rotate(45deg);
 		}
 	}
+	&__bottom-part {
+		position: absolute;
+		bottom: 60px;
+	}
+	&__social-icons {
+		margin-bottom: 55px;
+		a {
+			margin-right: 50px;
+			width: 24px;
+			height: 24px;
+		}
+	}
+	&__rights {
+		font-family: $main-font;
+	}
 }
 .menu {
 	padding-top: 75px;
@@ -87,13 +103,12 @@
 @include tablet() {
 	.main-navigation {
 		width: 65vw;
-		padding: 70px 80px;
+		padding: 70px 80px 0;
 	}
 }
 
 @include tablet() {
 	.main-navigation {
 		width: 540px;
-		padding: 70px 80px;
 	}
 }
