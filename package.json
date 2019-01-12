@@ -1,5 +1,5 @@
 {
-  "name": "Austurhofn",
+  "name": "jungo",
   "version": "1.0.0",
   "description": "Custom WP theme for Austurhofn project",
   "repository": {
@@ -49,7 +49,12 @@
     "watchify": "^3.9.0",
     "yargs": "^8.0.2"
   },
+<<<<<<< HEAD
   "dependencies": {
     "tilt.js": "^1.2.1"
   }
+=======
+  "main": "gulpfile.js",
+  "dependencies": {}
+>>>>>>> f8f3dbaed32cbb4cca1a2999e8caf40aa509ffa0
 }
