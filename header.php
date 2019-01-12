@@ -50,12 +50,24 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-			<div class="main-navigation__social-icons">
-				<div class="">
+			<div class="main-navigation__bottom-part">
+				<div class="main-navigation__social-icons">
+					<a target="_blank" href="https://www.facebook.com/">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-facebook.svg" alt="facebook logo" />
+					</a>
+					<a target="_blank" href="https://www.instagram.com/">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-instagram.svg" alt="instagram logo" />
+					</a>
+					<a target="_blank" href="https://twitter.com/">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-twitter.svg" alt="twitter logo" />
+					</a>
+				</div>
+				<div class="main-navigation__rights">
+					<p>© 2018 Jungo, all rights reserved.</p>
 
 				</div>
-
 			</div>
+
 		</div>
 
 	</nav><!-- #site-navigation -->
