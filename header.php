@@ -22,37 +22,42 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'jungo' ); ?></a>
+	<div class="site-overlay js-overlay"></div>
+	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'jungo' ); ?></a> -->
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div class="site-header__logo">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$jungo_description = get_bloginfo( 'description', 'display' );
-			if ( $jungo_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $jungo_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div>
+		<div class="site-header__hamburger-wrapper">
+			<p>MENU</p>
+			<div class="site-header__hamburger-btn js-open-nav"></div>
+		</div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'jungo' ); ?></button>
+	</header><!-- #masthead -->
+	<nav id="site-navigation" class="main-navigation">
+		<div class="main-navigation__wrapper">
+
+			<div class="main-navigation__hamburger-wrapper">
+				<p>MENU</p>
+				<div class="main-navigation__hamburger-btn js-close-nav"></div>
+			</div>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<div class="main-navigation__social-icons">
+				<div class="">
+
+				</div>
+
+			</div>
+		</div>
+
+	</nav><!-- #site-navigation -->
 
 	<div id="content" class="site-content">
