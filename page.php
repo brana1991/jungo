@@ -47,7 +47,12 @@ if( have_rows('content_component') ):
 			  <?php include get_template_directory() . '/template-parts/our-team.php'; ?>
 			</div>
 		<?php endif; ?>
-
+    <!-- Service section -->
+    <?php  if( get_row_layout() == 'service' ): ?>
+      <div class="service-section">
+        <?php include get_template_directory() . '/template-parts/service-section.php'; ?>
+      </div>
+    <?php endif; ?>
 
 
 
