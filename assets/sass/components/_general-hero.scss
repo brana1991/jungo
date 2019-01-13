@@ -3,6 +3,7 @@
 .g-hero {
 	height: 100vh;
 	width: 100%;
+	position: relative;
 	&__wrapper {
 		position: relative;
 		height: 100%;
@@ -21,9 +22,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transform-style: preserve-3d;
+		transform: perspective(500px);
+		&:hover {
+			&:after {
+				transform: translateZ(-100px);
+			}
+		}
 	}
 	h1 {
 		width: 100%;
+		display: block;
 		margin-bottom: 30px;
 		text-align: center;
 		text-transform: uppercase;
@@ -31,6 +40,9 @@
 		font-size: 60px;
 		font-weight: bold;
 		font-family: $main-font;
+		transform: translateZ(50px) scale(0.6);
+		// transform: translateZ(50px) translateY(-50%) translateX(-50%);
+		position: absolute;
 	}
 	&__side-scroll {
 		position: absolute;
