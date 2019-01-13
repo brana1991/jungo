@@ -53,6 +53,11 @@ if( have_rows('content_component') ):
         <?php include get_template_directory() . '/template-parts/service-section.php'; ?>
       </div>
     <?php endif; ?>
+    <?php  if( get_row_layout() == 'portfolio' ): ?>
+      <div class="portfolio-section">
+        <?php include get_template_directory() . '/template-parts/portfolio.php'; ?>
+      </div>
+    <?php endif; ?>
 
 
 

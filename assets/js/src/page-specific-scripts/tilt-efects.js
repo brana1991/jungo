@@ -14,3 +14,9 @@ if (window.innerWidth > 1200) {
 	// $titleTilt.tilt({ maxTilt: 5 });
 	// });
 }
+
+// $('.multiple-items').slick({
+// 	infinite: true,
+// 	slidesToShow: 3,
+// 	slidesToScroll: 3,
+// });
