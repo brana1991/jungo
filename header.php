@@ -31,18 +31,18 @@
 			the_custom_logo();
 				?>
 		</div>
-		<div class="site-header__hamburger-wrapper">
+		<div class="site-header__hamburger-wrapper js-open-nav">
 			<p>MENU</p>
-			<div class="site-header__hamburger-btn js-open-nav"></div>
+			<div class="site-header__hamburger-btn"></div>
 		</div>
 
 	</header><!-- #masthead -->
 	<nav id="site-navigation" class="main-navigation">
 		<div class="main-navigation__wrapper">
 
-			<div class="main-navigation__hamburger-wrapper">
+			<div class="main-navigation__hamburger-wrapper  js-close-nav">
 				<p>MENU</p>
-				<div class="main-navigation__hamburger-btn js-close-nav"></div>
+				<div class="main-navigation__hamburger-btn"></div>
 			</div>
 			<?php
 			wp_nav_menu( array(
