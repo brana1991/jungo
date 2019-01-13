@@ -12,10 +12,19 @@
       <div class="team__person js-person">
         <div class="team__person-img-wrapper">
           <div class="team__person-square"></div>
-          <div class="team__person-img bg-img" style="background-image: url('<?php the_sub_field('people_img'); ?>')">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="team__person-back-img bg-img" style="background-image: url('<?php the_sub_field('people_second_image'); ?>')"></div>
+              </div>
+              <div class="flip-box-back">
+                <div class="team__person-front-img bg-img" style="background-image: url('<?php the_sub_field('people_img'); ?>')"></div>
+
+              </div>
+            </div>
           </div>
-          <div class="team__person-img-behind bg-img" style="background-image: url('<?php the_sub_field('people_second_image'); ?>')"></div>
         </div>
+
         <h4><?php the_sub_field('people_name'); ?></h4>
         <h6><?php the_sub_field('people_position'); ?></h6>
       </div>
