@@ -58,6 +58,11 @@ if( have_rows('content_component') ):
         <?php include get_template_directory() . '/template-parts/portfolio.php'; ?>
       </div>
     <?php endif; ?>
+    <?php  if( get_row_layout() == 'homepage_links' ): ?>
+      <div class="homepage-section">
+        <?php include get_template_directory() . '/template-parts/homepage-links.php'; ?>
+      </div>
+    <?php endif; ?>
 
 
 
