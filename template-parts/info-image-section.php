@@ -3,10 +3,17 @@
     <?php
     $has_image = get_sub_field('has_image');
      if ($has_image): ?>
-    <div class="info-img__image" style="background-image: url('<?php the_sub_field('info_background_image'); ?>')">
-    <?php endif; ?>
-    </div>
+      <div class="info-img__image js-tilt-image" data-tilt  data-tilt-transition="true" style="background-image: url('<?php the_sub_field('info_background_image'); ?>')">
+          <div class="info-img__overlap" style="background-image: url('<?php the_sub_field('overlap_info_image'); ?>')">
+          </div>
+      </div>
+  <?php endif; ?>
+    <?php if ($has_image): ?>
     <div class="info-img__info global-wrapp">
+    <?php else : ?>
+      <div class="info-img__info info-img__info--no-img global-wrapp">
+
+    <?php endif; ?>
       <div class="info-img__title section-title">
         <?php the_sub_field('info_title'); ?>
       </div>
