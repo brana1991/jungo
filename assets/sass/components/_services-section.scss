@@ -57,7 +57,11 @@
 		z-index: 20;
 	}
 	&__info {
+		position: relative;
 		margin-bottom: 100px;
+		opacity: 0;
+		transition: 1s;
+		left: -200px;
 	}
 
 	&__text {

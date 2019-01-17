@@ -187,6 +187,7 @@ function jungo_scripts() {
 
 	if (is_page('service')) {
 		wp_enqueue_script( 'service', get_template_directory_uri() . '/assets/js/services.js', array('jquery'), '1.0.0', true );
+		
 	}
 
 

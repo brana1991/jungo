@@ -37,6 +37,9 @@
 	&__home-side-line {
 		display: none;
 	}
+	&__line {
+		display: none;
+	}
 }
 
 @include tablet() {
@@ -71,6 +74,42 @@
 
 @include desktop() {
 	.home {
+		&__wrapper {
+			position: relative;
+			padding: 0 80px;
+		}
+		&__line {
+			display: flex;
+			position: absolute;
+			top: 50%;
+			transform: rotate(90deg);
+			color: $white;
+			font-family: $main-font;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 5px;
+				right: 80px;
+				width: 220px;
+				height: 2px;
+				background: white;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 5px;
+				left: 80px;
+				width: 220px;
+				height: 2px;
+				background: white;
+			}
+			&--left {
+				left: 75px;
+			}
+			&--right {
+				right: 75px;
+			}
+		}
 		// &__home-side-line {
 		// 	position: absolute;
 		// 	left: 80px;
