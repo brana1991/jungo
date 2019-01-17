@@ -16,3 +16,14 @@ $hamburgerCloseBtn.on('click', () => {
 	$('.main-navigation__hamburger-wrapper').css('opacity', '0');
 	$('.site-overlay').css('display', 'none');
 });
+
+$('.g-hero__side-scroll').on('click', function() {
+	console.log('asd');
+	var vheight = $(window).height();
+	$('html, body').animate(
+		{
+			scrollTop: (Math.floor($(window).scrollTop() / vheight) + 1) * vheight,
+		},
+		500,
+	);
+});

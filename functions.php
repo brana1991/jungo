@@ -185,6 +185,11 @@ function jungo_scripts() {
 	wp_enqueue_script( 'tilt-efects', get_template_directory_uri() . '/assets/js/tilt-efects.js', array('jquery', 'slick-js', 'tilt-js'), '1.0.0', true );
 	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.js', array('jquery'), '1.0.0', true );
 
+	if (is_page('service')) {
+		wp_enqueue_script( 'service', get_template_directory_uri() . '/assets/js/services.js', array('jquery'), '1.0.0', true );
+		
+	}
+
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

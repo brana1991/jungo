@@ -13,6 +13,13 @@
     <?php endif; ?>
 
     </div>
+    <div class="home__line home__line--left">
+      Jungo
+    </div>
+    <div class="home__line home__line--right">
+      <?php echo date("Y"); ?>
+
+    </div>
   </div>
   <div class="home__footer">
     <div class="home__socials">
