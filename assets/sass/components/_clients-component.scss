@@ -1,14 +1,14 @@
 .clients{
-  &__row{
-     height: 100%;
-     width: 100%;
-    }
+  display: flex;
   &__wrap{
     width: 100%;
     column-count: 2;
     column-gap: 0;
     list-style: none;
+    font-size: 0;
     & li{
+      text-align: center;
+      display: inline-block;
       position: relative;
       width: 100%;
       border-left: 1px solid #E5E5E5 ;
