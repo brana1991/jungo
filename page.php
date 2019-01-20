@@ -22,7 +22,7 @@ if( have_rows('content_component') ):
     while ( have_rows('content_component') ) : the_row();
     ?>
     <!-- Info with client section -->
-    <?php  if( get_row_layout() == 'clients_section' ): ?>
+    <?php  if( get_row_layout() == 'clients_' ): ?>
       <div class="clients-section">
         <?php include get_template_directory() . '/template-parts/clients-component.php'; ?>
       </div>

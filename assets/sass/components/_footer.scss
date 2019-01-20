@@ -57,15 +57,14 @@
     margin-top:0;
     &__wrapper{
      margin-left: 38px;
-     img:nth-child(3) {
+     a:nth-child(3) {
         margin-left: 50px;
-        margin-top:26px;
         margin-right: 50px;
         margin-bottom: 0;
       }
      p:first-child{
         margin-left: 0px;
-        margin-bottom:0px;
+        margin-bottom:26px;
       }
     }
   }
