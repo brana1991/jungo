@@ -40,6 +40,12 @@ if( have_rows('content_component') ):
 			  <?php include get_template_directory() . '/template-parts/info-image-section.php'; ?>
 			</div>
 		<?php endif; ?>
+    <!-- Map section -->
+		<?php  if( get_row_layout() == 'google_map' ): ?>
+			<div class="map">
+			  <?php include get_template_directory() . '/template-parts/map-component.php'; ?>
+			</div>
+		<?php endif; ?>
 
 		<!-- Info with image section -->
 		<?php  if( get_row_layout() == 'our_team' ): ?>
