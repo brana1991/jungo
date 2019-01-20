@@ -184,7 +184,7 @@ function jungo_scripts() {
 	wp_enqueue_script( 'tilt-js', 'https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'tilt-efects', get_template_directory_uri() . '/assets/js/tilt-efects.js', array('jquery', 'slick-js', 'tilt-js'), '1.0.0', true );
 	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/slick.js', array('jquery'), '1.0.0', true );
-	wp_enqueue_script( 'gmaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBWpSMCxK--LsdRI9swT6gzhtjQThqkbR8', array(), 'v3', true );
+	wp_enqueue_script( 'gmaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAfwAh3kEIpEDbFE_bXJEvGhUuQAmIFSWI', array(), 'v3', true );
 
 	if (is_page('service')) {
 		wp_enqueue_script( 'service', get_template_directory_uri() . '/assets/js/services.js', array('jquery'), '1.0.0', true );
@@ -204,7 +204,7 @@ add_action( 'wp_enqueue_scripts', 'jungo_scripts' );
  */
 function my_acf_init() {
 
-	acf_update_setting('google_api_key', 'AIzaSyBWpSMCxK--LsdRI9swT6gzhtjQThqkbR8');
+	acf_update_setting('google_api_key', 'AIzaSyAfwAh3kEIpEDbFE_bXJEvGhUuQAmIFSWI');
 }
 
 add_action('acf/init', 'my_acf_init');
