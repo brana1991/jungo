@@ -18,7 +18,6 @@ $hamburgerCloseBtn.on('click', () => {
 });
 
 $('.g-hero__side-scroll').on('click', function() {
-	console.log('asd');
 	var vheight = $(window).height();
 	$('html, body').animate(
 		{
