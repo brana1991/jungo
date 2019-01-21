@@ -71,3 +71,15 @@
 		}
 	}
 }
+@include desktop-lg() {
+	.info-img {
+		padding-top: 202px;
+		&__info {
+			width:60%;
+			padding-top: 140px;
+		}
+		&__image{
+			width: 45%;
+		}
+	}
+}

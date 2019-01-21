@@ -1,5 +1,4 @@
 .clients{
-  display: flex;
   &__wrap{
     width: 100%;
     column-count: 2;
@@ -14,6 +13,7 @@
       border-left: 1px solid #E5E5E5 ;
       border-bottom: 1px solid #E5E5E5 ;
       border-top: 1px solid #E5E5E5 ;
+      border-right: 1px solid #E5E5E5 ;
       padding-bottom: 100%;
     }
   }

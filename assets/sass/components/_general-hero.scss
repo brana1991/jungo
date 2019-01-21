@@ -140,7 +140,22 @@
 	}
 }
 
-@include desktop-lg() {
+@include desktop-xlg() {
 	.g-hero {
+		&__side-scroll {
+			bottom: 119px;
+			left: 133px;
+		}
+		&__side-scroll-text {
+			position: absolute;
+			top: 50%;
+			left: 131px;
+			display: flex;
+			font-family: $main-font;
+			text-transform: uppercase;
+			font-size: 16px;
+			color: $white;
+			transform: rotate(270deg);
+		}
 	}
 }
