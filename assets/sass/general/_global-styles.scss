@@ -136,6 +136,9 @@ a.disabled {
 }
 
 @include desktop() {
+	.desktop-hide {
+		display: none;
+	}
 }
 @include desktop-lg() {
 	.global-wrapp {
