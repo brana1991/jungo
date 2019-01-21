@@ -1,5 +1,7 @@
 <section class="home g-hero">
   <div class="home__wrapper g-hero__wrapper" style="background-image: url('<?php the_sub_field('homepage_link_background'); ?>')">
+    <div class="g-hero__background" data-tilt style="background-image: url('<?php the_sub_field('homepage_link_background'); ?>')">
+
     <div class="home__shape-img g-hero__shape" style="background-image: url('<?php the_sub_field('homepage_shape_bg'); ?>')">
       <?php if (have_rows('home_links')): ?>
       <div class="home__links-wrapp">
@@ -13,6 +15,10 @@
     <?php endif; ?>
 
     </div>
+  </div>
+  <div class="g-hero__shape desktop-hide js-image-tilt" style="background-image: url('<?php the_sub_field('shape_object_image'); ?>')">
+    <h1 class"g-hero__title js-title-tilt"><?php the_title(); ?></h1>
+  </div>
     <div class="home__line home__line--left">
       Jungo
     </div>

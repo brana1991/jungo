@@ -78,6 +78,13 @@
 			position: relative;
 			padding: 0 80px;
 		}
+		&__links-wrapp {
+			flex-flow: row;
+			justify-content: space-around;
+		}
+		&__shape-img {
+			height: 60%;
+		}
 		&__line {
 			display: flex;
 			position: absolute;

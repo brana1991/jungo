@@ -17,8 +17,6 @@
   <div class="g-hero__side-scroll-text">
     <?php the_sub_field('side_description') ?>
   </div>
-
 </div>
-
 </section>
 <?php endif; ?>

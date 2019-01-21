@@ -1,5 +1,6 @@
 #masthead {
 }
+
 .g-hero {
 	height: 100vh;
 	width: 100%;
@@ -175,4 +176,7 @@
 @include desktop-lg() {
 	.g-hero {
 	}
+}
+.add-black {
+	color: $black;
 }
