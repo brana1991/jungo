@@ -62,3 +62,9 @@
 		}
 	}
 }
+@include desktop() {
+	.site-header {
+		padding: 60px 140px 0px 140px;
+	}
+
+}

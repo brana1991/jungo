@@ -6,7 +6,7 @@
 	padding-right: 36px;
 	padding: 50px 36px 0px 60px;
 	right: -100vw;
-	background-color: $background-grey;
+	background-color:$background-grey;
 	transition: 0.5s;
 	z-index: 50;
 	&__wrapper {
@@ -73,7 +73,8 @@
 		}
 	}
 	&__rights {
-		font-family: $main-font;
+		font-family: $regular;
+		font-size: 14px;
 	}
 }
 .menu {
@@ -93,7 +94,7 @@
 			margin: 18px 0 28px;
 			li {
 				font-size: 18px;
-				font-weight: normal;
+				font-family: $medium;
 				color: #999999;
 				margin-bottom: 10px;
 				text-transform: none;
@@ -101,7 +102,6 @@
 		}
 	}
 }
-
 @include tablet() {
 	.main-navigation {
 		width: 65vw;

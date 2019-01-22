@@ -122,34 +122,15 @@
 		}
 		&__side-scroll {
 			display: flex;
-			bottom: 170px;
+			bottom: 13%;
+			left: 98px;
 			position: relative;
 			width: fit-content;
 		}
 		&__side-scroll-text {
 			position: absolute;
-			top: 50%;
-			left: 30px;
-			display: flex;
-			font-family: $main-font;
-			text-transform: uppercase;
-			font-size: 16px;
-			color: $white;
-			transform: rotate(270deg);
-		}
-	}
-}
-
-@include desktop-xlg() {
-	.g-hero {
-		&__side-scroll {
-			bottom: 119px;
-			left: 133px;
-		}
-		&__side-scroll-text {
-			position: absolute;
-			top: 50%;
-			left: 131px;
+			top: 35%;
+			left: 84px;
 			display: flex;
 			font-family: $main-font;
 			text-transform: uppercase;

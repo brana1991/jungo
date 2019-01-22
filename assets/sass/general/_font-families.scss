@@ -2,11 +2,11 @@
 * Font families *
 ****************/
 // Families definitions
-// @font-face {
-// 	font-family: 'Montserrat';
-// 	// src: url('./fonts/MyriadPro-Regular.otf') format('opentype');
-// 	font-weight: normal;
-// }
+@font-face {
+	font-family: 'Montserrat';
+	// src: url('./fonts/MyriadPro-Regular.otf') format('opentype');
+	font-weight: normal;
+}
 @font-face {
 	font-family: 'Roboto Mono';
 	src: url('assets/fonts/DanteMTStd-Regular.woff') format('woff');
@@ -19,7 +19,17 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('assets/fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('assets/fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 // Families variables
 $main-font: 'Montserrat-black';
 $roboto: 'Roboto Mono';
+$regular: 'Montserrat';
+$medium: 'montserratmedium';
