@@ -1,5 +1,6 @@
 #masthead {
 }
+
 .g-hero {
 	height: 100vh;
 	width: 100%;
@@ -8,11 +9,15 @@
 		position: relative;
 		height: 100%;
 		width: 100%;
-		padding: 0 40px;
+		overflow: hidden;
 		@include bgImage();
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		padding: 0 40px;
+	}
+	&__background {
+		display: none;
 	}
 	&__shape {
 		width: 100%;
@@ -50,6 +55,7 @@
 		color: $white;
 		bottom: 90px;
 		cursor: pointer;
+		left: 0;
 		span {
 			position: relative;
 			font-family: $main-font;
@@ -116,16 +122,40 @@
 			transform-style: preserve-3d;
 			position: relative;
 		}
+		&__background {
+			height: 110vh;
+			width: 110%;
+			@include bgImage();
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0 40px;
+		}
+		&__shape-wrapper {
+			display: flex;
+			width: 50%;
+			height: 50%;
+			align-items: center;
+			justify-content: center;
+		}
+		&__shape {
+			width: 100%;
+			height: 100%;
+		}
 		h1 {
-			font-size: 130px;
+			font-size: 80px;
 			transform: translateZ(20px);
 		}
+
 		&__side-scroll {
 			display: flex;
 			bottom: 13%;
 			left: 98px;
 			position: relative;
 			width: fit-content;
+			position: absolute;
+			bottom: 150px;
+			left: 45px;
 		}
 		&__side-scroll-text {
 			position: absolute;
@@ -139,4 +169,21 @@
 			transform: rotate(270deg);
 		}
 	}
+	.desktop-hide {
+		display: none;
+	}
 }
+<<<<<<< HEAD
+=======
+
+@include desktop-lg() {
+	.g-hero {
+		h1 {
+			font-size: 130px;
+		}
+	}
+}
+.add-black {
+	color: $black;
+}
+>>>>>>> 29381ae6f37d2af4aa942f1de892353f762e46a0

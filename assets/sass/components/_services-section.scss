@@ -12,7 +12,14 @@
 		padding: 100px 0 0;
 		display: flex;
 		flex-flow: column-reverse;
+<<<<<<< HEAD
 		// background-color: #f5f5f5;
+=======
+		background-color: #f5f5f5;
+		&:nth-of-type(even) {
+			background-color: $white;
+		}
+>>>>>>> 29381ae6f37d2af4aa942f1de892353f762e46a0
 		&:nth-of-type(even) > .service__image-section-wrapper {
 			&:before {
 				left: -200px;

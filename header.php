@@ -32,18 +32,22 @@
 				?>
 		</div>
 		<div class="site-header__hamburger-wrapper js-open-nav">
-			<p>MENU</p>
-			<div class="site-header__hamburger-btn"></div>
+			<p class="js-menu-text">MENU</p>
+			<button class="hamburger hamburger--spin" type="button">
+				<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+				</span>
+			</button>
 		</div>
 
 	</header><!-- #masthead -->
 	<nav id="site-navigation" class="main-navigation">
 		<div class="main-navigation__wrapper">
 
-			<div class="main-navigation__hamburger-wrapper  js-close-nav">
+			<!-- <div class="main-navigation__hamburger-wrapper">
 				<p>MENU</p>
 				<div class="main-navigation__hamburger-btn"></div>
-			</div>
+			</div> -->
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
