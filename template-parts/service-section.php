@@ -4,8 +4,7 @@
   <div class="service__wrapper">
     <?php
      while ( have_rows('service_repeater') ) : the_row(); ?>
-     <div class="service__single-service" style="background-color:<?php the_sub_field('service_color'); ?>" >
-
+     <div class="service__single-service">
        <div class="service__image-section-wrapper">
          <div data-tilt class="service__shape-image js-tilt" style="background-image: url('<?php the_sub_field('service_shape_image'); ?>')"></div>
          <div data-tilt class="service__image js-tilt" style="background-image: url('<?php the_sub_field('service_image'); ?>')"></div>

@@ -45,19 +45,23 @@
 }
 @include desktop() {
 	.info-img {
-		padding: 100px 0 0;
+		padding: 100px 0;
 		&__wrapper {
 			flex-flow: row;
 		}
 		&__image {
-			width: 45%;
 			height: auto;
+			width: 45%;
 			background-size: contain;
+			background-position: top;
+		}
+		&__overlap{
+			background-position: top;
 		}
 		&__info {
+			padding-top: 230px;
 			width: 50%;
 			font-size: 16px;
-			padding-bottom: 100px;
 			&--no-img {
 				width: 100%;
 			}
@@ -68,18 +72,6 @@
 				background-color: $grey;
 				color: $white;
 			}
-		}
-	}
-}
-@include desktop-lg() {
-	.info-img {
-		padding-top: 202px;
-		&__info {
-			width:60%;
-			padding-top: 140px;
-		}
-		&__image{
-			width: 45%;
 		}
 	}
 }
