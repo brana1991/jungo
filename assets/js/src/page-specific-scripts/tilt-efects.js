@@ -19,15 +19,6 @@ if (window.innerWidth > 1200 && window.innerWidth < 1800) {
 		speed: 1400,
 		scale: 1.01,
 	});
-
-	// $imageTilt.tilt({
-	// 	// glare: true,
-	// 	maxTilt: 10,
-	// 	// maxGlare: 0.5,
-	// });
-	// $imageTilt.on('tilt.mouseEnter', function(e) {
-	// $titleTilt.tilt({ maxTilt: 5 });
-	// });
 } else if (window.innerWidth >= 1800) {
 	$('.g-hero__background').tilt({
 		maxTilt: 3,
