@@ -4,21 +4,24 @@ const $hamburgerOpenBtn = $('.js-open-nav'),
 $('.js-person:odd').addClass('team__person-even');
 
 $hamburgerOpenBtn.on('click', () => {
-	$('.main-navigation').css('right', '0px');
-	setTimeout(function() {
-		$('.main-navigation__hamburger-wrapper').css('opacity', '1');
-		// $('.menu-item').animate({ left: '+=50' });
-	}, 700);
-	$('.site-overlay').css('display', 'block');
+	$('.main-navigation').toggleClass('show-hide-menu');
+	$('.site-overlay').toggle();
+	// $hamburgerOpenBtn.addClass('js-close-nav');
+	$('.hamburger').toggleClass('is-active');
+	$('.js-menu-text').toggleClass('add-black');
 });
-$hamburgerCloseBtn.on('click', () => {
+
+$('.js-close-nav').on('click', () => {
 	$('.main-navigation').css('right', '-100vw');
 	$('.main-navigation__hamburger-wrapper').css('opacity', '0');
 	$('.site-overlay').css('display', 'none');
+
+	$hamburgerOpenBtn.removeClass('is-active');
+	$hamburgerOpenBtn.removeClass('js-close-nav');
+	$hamburgerOpenBtn.addClass('js-open-nav');
 });
 
 $('.g-hero__side-scroll').on('click', function() {
-	console.log('asd');
 	var vheight = $(window).height();
 	$('html, body').animate(
 		{

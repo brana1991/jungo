@@ -9,6 +9,9 @@ body {
 // .disqus-footer__wrapper {
 // 	display: none !important;
 // }
+.show-hide-menu {
+	right: 0px !important;
+}
 .site {
 	position: relative;
 	overflow: hidden;
@@ -136,6 +139,9 @@ a.disabled {
 }
 
 @include desktop() {
+	.desktop-hide {
+		display: none;
+	}
 }
 @include desktop-lg() {
 	.global-wrapp {
