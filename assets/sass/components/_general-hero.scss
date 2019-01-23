@@ -150,7 +150,7 @@
 		&__side-scroll {
 			display: flex;
 			bottom: 13%;
-			left: 198px;
+			left: 98px;
 			position: relative;
 			width: fit-content;
 			position: absolute;
@@ -172,4 +172,15 @@
 	.desktop-hide {
 		display: none;
 	}
+}
+
+@include desktop-lg() {
+	.g-hero {
+		h1 {
+			font-size: 130px;
+		}
+	}
+}
+.add-black {
+	color: $black;
 }
