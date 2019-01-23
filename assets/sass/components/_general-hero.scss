@@ -150,7 +150,7 @@
 		&__side-scroll {
 			display: flex;
 			bottom: 13%;
-			left: 98px;
+			left: 198px;
 			position: relative;
 			width: fit-content;
 			position: absolute;
@@ -173,17 +173,3 @@
 		display: none;
 	}
 }
-<<<<<<< HEAD
-=======
-
-@include desktop-lg() {
-	.g-hero {
-		h1 {
-			font-size: 130px;
-		}
-	}
-}
-.add-black {
-	color: $black;
-}
->>>>>>> 29381ae6f37d2af4aa942f1de892353f762e46a0
