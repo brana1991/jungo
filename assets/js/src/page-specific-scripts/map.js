@@ -1,3 +1,5 @@
+import * as mapConfig from './map-config.json';
+
 (function($) {
 	/*
 *  new_map
@@ -20,7 +22,8 @@
 		var args = {
 			zoom: 16,
 			center: new google.maps.LatLng(0, 0),
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			// mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: mapConfig.styles,
 		};
 
 		// create map
