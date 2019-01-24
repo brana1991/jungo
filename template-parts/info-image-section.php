@@ -3,7 +3,7 @@
     <?php
     $has_image = get_sub_field('has_image');
      if ($has_image): ?>
-      <div class="info-img__image js-tilt-image" data-tilt  data-tilt-transition="true" style="background-image: url('<?php the_sub_field('info_background_image'); ?>')">
+      <div class="info-img__image js-tilt-image"  style="background-image: url('<?php the_sub_field('info_background_image'); ?>')">
           <div class="info-img__overlap" style="background-image: url('<?php the_sub_field('overlap_info_image'); ?>')">
           </div>
       </div>

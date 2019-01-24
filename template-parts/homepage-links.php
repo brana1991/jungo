@@ -1,6 +1,6 @@
 <section class="home g-hero">
   <div class="home__wrapper g-hero__wrapper" style="background-image: url('<?php the_sub_field('homepage_link_background'); ?>')">
-    <div class="g-hero__background" data-tilt style="background-image: url('<?php the_sub_field('homepage_link_background'); ?>')">
+    <div class="g-hero__background" style="background-image: url('<?php the_sub_field('homepage_link_background'); ?>')">
 
     <div class="home__shape-img g-hero__shape" style="background-image: url('<?php the_sub_field('homepage_shape_bg'); ?>')">
       <?php if (have_rows('home_links')): ?>
