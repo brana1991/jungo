@@ -1,43 +1,20 @@
 if (window.innerWidth > 1200 && window.innerWidth < 1800) {
-	// $('.js-tilt').tilt({
-	// 	glare: true,
-	// 	maxGlare: 0.5,
-	// });
 	const $imageTilt = $('.js-image-tilt');
 	const $titleTilt = $('.js-image-tilt');
 	$('.g-hero__background').tilt({
-		maxTilt: 5,
-		perspective: 1400,
-		easing: 'cubic-bezier(.03,.98,.52,.99)',
-		speed: 1100,
-		scale: 1.01,
-	});
-	$imageTilt.tilt({
-		maxTilt: 11,
-		perspective: 1000,
-		easing: 'cubic-bezier(.03,.98,.52,.99)',
-		speed: 1400,
-		scale: 1.01,
+		maxTilt: 3,
+		perspective: 800,
+		// easing: 'cubic-bezier(.03,.98,.52,.99)',
+		speed: 800,
+		scale: 1,
 	});
 } else if (window.innerWidth >= 1800) {
+	console.log('adssa');
 	$('.g-hero__background').tilt({
-		maxTilt: 3,
+		maxTilt: 2,
 		perspective: 600,
-		easing: 'cubic-bezier(.03,.98,.52,.99)',
-		speed: 1000,
-		scale: 1.01,
-	});
-	$imageTilt.tilt({
-		maxTilt: 11,
-		perspective: 1000,
-		easing: 'cubic-bezier(.03,.98,.52,.99)',
-		speed: 1400,
-		scale: 1.01,
+		// easing: 'cubic-bezier(.03,.98,.52,.99)',
+		speed: 800,
+		scale: 1,
 	});
 }
-
-// $('.multiple-items').slick({
-// 	infinite: true,
-// 	slidesToShow: 3,
-// 	slidesToScroll: 3,
-// });

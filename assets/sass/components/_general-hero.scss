@@ -116,6 +116,9 @@
 
 @include desktop() {
 	.g-hero {
+		&__wrapper {
+			padding: 0;
+		}
 		&__shape {
 			// width: 362px;
 			// height: 556px;
@@ -143,6 +146,8 @@
 			height: 100%;
 		}
 		h1 {
+			display: flex;
+			position: relative;
 			font-size: 80px;
 			transform: translateZ(20px);
 		}
