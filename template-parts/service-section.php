@@ -7,8 +7,8 @@
      <div class="service__single-service">
 
        <div class="service__image-section-wrapper">
-         <div data-tilt class="service__shape-image js-tilt" style="background-image: url('<?php the_sub_field('service_shape_image'); ?>')"></div>
-         <div data-tilt class="service__image js-tilt" style="background-image: url('<?php the_sub_field('service_image'); ?>')"></div>
+         <div class="service__shape-image js-tilt" style="background-image: url('<?php the_sub_field('service_shape_image'); ?>')"></div>
+         <div class="service__image js-tilt" style="background-image: url('<?php the_sub_field('service_image'); ?>')"></div>
          <div class="service__left-overlay"></div>
          <div class="service__right-overlay"></div>
        </div>

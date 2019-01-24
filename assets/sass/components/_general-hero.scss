@@ -34,6 +34,10 @@
 				transform: translateZ(-100px);
 			}
 		}
+		svg {
+			position: absolute;
+			height: 90%;
+		}
 	}
 	h1 {
 		width: 100%;

@@ -1,20 +1,15 @@
-if (window.innerWidth > 1200 && window.innerWidth < 1800) {
-	const $imageTilt = $('.js-image-tilt');
-	const $titleTilt = $('.js-image-tilt');
-	$('.g-hero__background').tilt({
-		maxTilt: 3,
-		perspective: 800,
-		// easing: 'cubic-bezier(.03,.98,.52,.99)',
-		speed: 800,
-		scale: 1,
+$(document).ready(function() {
+	var movementStrength = 25;
+	var height = movementStrength / $(window).height();
+	var width = movementStrength / $(window).width();
+	$('.g-hero__background').mousemove(function(e) {
+		var pageX = e.pageX - $(window).width() / 2;
+		var pageY = e.pageY - $(window).height() / 2;
+		var newvalueX = width * pageX * -1 - 50;
+		var newvalueY = height * pageY * -1 - 25;
+		$('.g-hero__background').css(
+			'background-position',
+			newvalueX + 'px     ' + newvalueY + 'px',
+		);
 	});
-} else if (window.innerWidth >= 1800) {
-	console.log('adssa');
-	$('.g-hero__background').tilt({
-		maxTilt: 2,
-		perspective: 600,
-		// easing: 'cubic-bezier(.03,.98,.52,.99)',
-		speed: 800,
-		scale: 1,
-	});
-}
+});
