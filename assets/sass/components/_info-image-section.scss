@@ -53,11 +53,16 @@
 			width: 45%;
 			height: auto;
 			background-size: contain;
+			background-position: top;
+		}
+		&__overlap{
+			background-position: top;
 		}
 		&__info {
 			width: 50%;
 			font-size: 16px;
 			padding-bottom: 100px;
+			padding-top: 208px;
 			&--no-img {
 				width: 100%;
 			}
