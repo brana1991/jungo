@@ -9,6 +9,16 @@
 	font-weight: normal;
 }
 @font-face {
+	font-family: 'Montserrat-black';
+	src: url('assets/fonts/Montserrat-Black.ttf') format('opentype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url('assets/fonts/Montserrat-Medium.ttf') format('opentype');
+	font-weight: normal;
+}
+@font-face {
 	font-family: 'Roboto Mono';
 	// src: url('assets/fonts/DanteMTStd-Regular.woff') format('woff');
 	font-weight: normal;
@@ -17,3 +27,5 @@
 // Families variables
 $main-font: 'Montserrat';
 $roboto: 'Roboto Mono';
+$main-black: 'Montserrat-black';
+$main-medium: 'Montserrat-Medium';
