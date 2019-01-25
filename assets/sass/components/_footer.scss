@@ -113,7 +113,6 @@
 @include desktop(){
   .footer{
     &__wrapper{
-      position: relative;
       display: flex;
       justify-content:space-around;
     }
@@ -132,8 +131,7 @@
     }
     &__copyrights{
       width: 100%;
-      position: absolute;
-      bottom: -100px;
+      height: 100px;
       margin: 0;
       &__wrapper{
         margin: 0;

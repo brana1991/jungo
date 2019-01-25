@@ -39,13 +39,13 @@
 	 	 </a>
  		</div>
 	</div>
+</div>
 	 <div class="footer__copyrights">
 		 <div class="footer__copyrights__wrapper">
 				 <p>Cookie Policy</p>
-				 <p>© 2018 Jungo, all rights reserved.</p>
+				 <p>© 2019 Jungo, all rights reserved.</p>
 			</div>
 	 </div>
- </div>
 </section>
 
 <?php wp_footer(); ?>
