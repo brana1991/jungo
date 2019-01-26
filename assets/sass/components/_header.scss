@@ -62,7 +62,7 @@
 		}
 	}
 }
-@include desktop() {
+@include desktop-lg() {
 	.site-header {
 		padding: 70px 140px 0;
 	}

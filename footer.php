@@ -28,10 +28,10 @@
 	<div class="footer__connect">
 		<div class="footer__connect__wrapper">
 		 <p>CONNECT</p>
-		 <a href="https://www.instagram.com/jungo_digital_solutions">
+		 <a href="https://www.facebook.com/jungodigital">
 		 	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-facebook.svg" alt="facebook logo" />
 		 </a>
-		 <a href="https://www.facebook.com/jungodigital">
+		 <a href="https://www.instagram.com/jungo_digital_solutions">
 			 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social-instagram.svg" alt="instagram logo" />
 		 </a>
 		 <a href="https://www.linkedin.com/company/jungo-digital-solution/">
