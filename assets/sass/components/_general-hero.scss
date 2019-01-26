@@ -163,12 +163,12 @@
 			width: fit-content;
 			position: absolute;
 			bottom: 150px;
-			left: 95px;
+			left: 45px;
 		}
 		&__side-scroll-text {
 			position: absolute;
 			top: 50%;
-			left: 82px;
+			left: 30px;
 			display: flex;
 			font-family: $main-font;
 			text-transform: uppercase;
@@ -184,6 +184,12 @@
 
 @include desktop-lg() {
 	.g-hero {
+		&__side-scroll{
+			left: 95px;
+		}
+		&__side-scroll-text{
+			left: 82px;
+		}
 		h1 {
 			font-size: 130px;
 		}
